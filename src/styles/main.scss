@@ -2,6 +2,7 @@
 @use 'header';
 @use 'variaveis';
 @use 'aboutmovie';
+@use 'robertdeniro';
 
 * {
     margin: 0;
@@ -54,68 +55,3 @@ body {
 }
 
 
-.about-movie-deniro {
-    background-image: url(../images/robert-de-niro.png);
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-
-    &__content {
-        display: grid;
-        height: 100%;
-        width: 1800px;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        padding-right: 50px;
-        position: relative;
-
-        &__box {
-            margin-top: -50px;
-            grid-column: 2;
-            width: 100%;
-            max-width: 900px;
-            border: 1px solid variaveis.$corDoTextoSecundario;
-            max-height: calc(100vh - 250px);
-            overflow: hidden;
-            
-            
-
-            h2 {
-                padding: 30px 60px 0px;
-            }
-            
-            &__text {
-                padding: 10px 60px;
-                padding-bottom: 50px;
-                
-                p {
-                    font-weight: 400;
-                    
-                }
-            }
-
-
-        }
-        .logo-dc__deniro {
-            position: absolute;
-            left: 0;
-            bottom: 45px;
-            padding-left: 20px;
-            img {
-                
-                width: 62px;
-            }
-    
-            
-        }
-       
-       
-
-    }
-    
-
-   
-}

@@ -1,13 +1,13 @@
 @use 'variaveis';
 
-.about-movie {
-    background-image: url(../images/joker-section-sobre-filme.png);
+
+.about-movie-deniro {
+    background-image: url(../images/robert-de-niro.png);
     height: 100vh;
     width: 100%;
     background-size: cover;
     display: flex;
     justify-content: center;
-    
 
     &__content {
         display: grid;
@@ -15,12 +15,12 @@
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-items: center;
-        padding-left: 50px;
+        padding-right: 50px;
         position: relative;
 
         &__box {
             margin-top: -50px;
-            grid-column: 1;
+            grid-column: 2;
             width: 100%;
             max-width: 900px;
             border: 1px solid variaveis.$corDoTextoSecundario;
@@ -36,30 +36,32 @@
             &__text {
                 padding: 10px 60px;
                 padding-bottom: 50px;
+                
                 p {
                     font-weight: 400;
                     
                 }
             }
 
-            &__dc {
-                position: absolute;
-                bottom: 45px;
-                
-                img {
-                    
-                    width: 62px;
-                }
-    
-                
-            }
 
         }
-
+        .logo-dc__deniro {
+            position: absolute;
+            left: 0;
+            bottom: 45px;
+            padding-left: 45px;
+            img {
+                
+                width: 62px;
+            }
+    
+            
+        }
+       
        
 
     }
+    
 
    
 }
-

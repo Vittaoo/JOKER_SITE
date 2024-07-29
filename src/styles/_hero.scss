@@ -1,0 +1,53 @@
+@use 'variaveis';
+
+.container__hero {
+    background-image: url(../images/joker-hero-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+    
+    &__logo {
+        width: 100%;
+        display: flex;
+        grid-column: 2;
+        padding-right: 70px;
+
+        .container__main__logos {
+            flex-direction: column;
+            width: 700px;   
+            padding-top: 60px;
+            
+            
+            .joker-logo {
+                
+                height: 350px;
+                justify-content: center;
+                margin-bottom: 24px;
+            }
+
+            .text_logo {
+                text-align: center;
+                font-weight: 300;
+                color: variaveis.$corDoTextoSecundario;
+            }
+
+            &__dc {
+                padding-top: 60px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+
+    }
+
+
+
+}
+
+

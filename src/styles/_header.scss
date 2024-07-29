@@ -1,0 +1,33 @@
+@use 'variaveis';
+
+.header__container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    z-index: 1;
+
+    .header__list {
+        grid-column: 2;
+        padding-right: 70px;
+        
+
+        .list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 60px;
+            width: 700px;
+
+            a {
+                text-decoration: none;
+                padding-left: 50px;
+                color: variaveis.$corDoTextoSecundario;
+                
+            }
+        }
+    }
+
+}

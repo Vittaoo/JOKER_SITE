@@ -3,6 +3,16 @@
 @use 'variaveis';
 @use 'aboutmovie';
 @use 'robertdeniro';
+@use 'zazie';
+@use 'joaquin';
+@use 'bilheteria';
+@use 'footer';
+@use 'navbar';
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 * {
     margin: 0;

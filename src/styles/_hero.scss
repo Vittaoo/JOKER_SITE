@@ -6,48 +6,150 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
+    width: 100%;
     display: grid;
     align-items: center;
-    grid-template-columns: 2fr 1fr;
+    justify-content: flex-end;
+    grid-template-columns: 1fr;
+    overflow: hidden;
     position: relative;
-    
+    padding: 0 20px;
+
     &__logo {
-        width: 100%;
+        max-width: 100%;
         display: flex;
-        grid-column: 2;
-        padding-right: 70px;
+        flex-direction: column;
+        align-items: flex-end;
+
 
         .container__main__logos {
+            display: flex;
             flex-direction: column;
-            width: 700px;   
+            align-items: center;
             padding-top: 60px;
-            
-            
+            text-align: center;
+
+            max-width: 90vw;
+
             .joker-logo {
-                
                 height: 350px;
-                justify-content: center;
+                max-width: 100%;
                 margin-bottom: 24px;
+                opacity: 1;
             }
 
             .text_logo {
-                text-align: center;
                 font-weight: 300;
                 color: variaveis.$corDoTextoSecundario;
+                word-wrap: break-word;
             }
 
             &__dc {
                 padding-top: 60px;
                 display: flex;
                 justify-content: center;
+                max-width: 100%;
             }
         }
-
-
     }
-
-
-
 }
 
 
+
+
+@media (max-width: 900px) {
+    .container__hero {
+        background-image: url(../images/joker-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        &__logo {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            .container__main__logos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 60px;
+                text-align: center;
+
+                max-width: 90vw;
+
+                .joker-logo {
+                    height: 300px;
+                    max-width: 100%;
+                    margin-bottom: 24px;
+                }
+
+                .text_logo {
+                    font-weight: 300;
+                    color: variaveis.$corDoTextoSecundario;
+                    word-wrap: break-word;
+                    font-size: 20px;
+                }
+
+                &__dc {
+                    padding-top: 60px;
+                    display: flex;
+                    justify-content: center;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 684px) {
+
+    .container__hero {
+        &__logo {
+            .container__main__logos {
+                .joker-logo {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 564px) {
+
+    .container__hero {
+        &__logo {
+            .container__main__logos {
+                .joker-logo {
+                    height: 200px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 440px) {
+    .container__hero {
+        &__logo {
+            .container__main__logos {
+                .joker-logo {
+                    height: 160px;
+                }
+
+                .text_logo {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

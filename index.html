@@ -22,76 +22,101 @@
 <body>
 
 
-<header class="header__container">
-
-    <div class="header__list">
-
-        <ul class="list">
-
-            <li>
-                <a class="text-md" href="">Sobre o filme</a>
-            </li>
-            <li>
-                <a class="text-md" href="">Sobre o filme</a>
-            </li>
-            <li>
-                <a class="text-md" href="">Sobre o filme</a>
-            </li>
-
-        </ul>
-
-    </div>
-
-</header>
-
-<section class="container__hero">
-
-    <div class="container__hero__logo">
-        <div class="container__main__logos">
-            <img class="joker-logo" src="./dist/images/Joker-logo.png" alt="">
-            <h3 class="text-md text_logo">A origem sombria do maior vilão de Gotham: uma jornada <br>
-                perturbadora e fascinante em Joker.</h3>
-            <div class="container__main__logos__dc">
-                <img class="logo-dc" src="./dist/images/logo-dc.png" alt="">
-            </div>
+    <header class="header__container">
+        <div class="hamburguer">
+            <span class="material-symbols-outlined" id="hamburguer-navbar" style="color: white;">
+                menu
+            </span>
+            <span class="material-symbols-outlined" id="close">
+                close
+            </span>
         </div>
 
-    </div>
+        <div class="header__list">
 
-    <div class="container__arrow">
-        <span class="material-symbols-outlined arrow_down">
-            keyboard_arrow_down
-        </span>
-    </div>
+            <ul class="list">
+
+                <li>
+                    <a class="text-md" href="#secao1">Sobre o filme</a>
+                </li>
+                <li>
+                    <a class="text-md" href="#secao2">Atores</a>
+                </li>
+                <li>
+                    <a class="text-md" href="#secao3">Bilheteria</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+    <section class="navbar-mobile">
+        <div class="menu__mobile">
+
+            <ul class="menu__mobile__list">
+
+                <li>
+                    <a class="text-md" href="#secaomobile1">Sobre o filme</a>
+                </li>
+                <li>
+                    <a class="text-md" href="#secaomobile2">Atores</a>
+                </li>
+                <li>
+                    <a class="text-md" href="#secaomobile3">Bilheteria</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </section>
+
+    <!------------------------------------------------------------------------------------------------------->
+
+    <section class="container__hero">
+
+        <div class="container__hero__logo">
+            <div class="container__main__logos">
+                <img class="joker-logo" src="./dist/images/Joker-logo.png" alt="">
+                <h3 class="text-md text_logo">A origem sombria do maior vilão de Gotham: uma jornada <br>
+                    perturbadora e fascinante em Joker.</h3>
+                <div class="container__main__logos__dc">
+                    <img class="logo-dc" src="./dist/images/logo-dc.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container__arrow">
+            <span class="material-symbols-outlined arrow_down">
+                keyboard_arrow_down
+            </span>
+        </div>
 
 
-</section>
+    </section>
 
 
 
 
 
-    <section class="about-movie">
-        <div class="about-movie__content">
-            <div class="about-movie__content__box">
+    <section class="about-movie" id="secao1">
+        <div class="about-movie__content"  >
+            <div class="about-movie__content__box get-div" id="modal-div" data-modal="modal-div">
                 <h2 class="text-big">SOBRE O FILME</h2>
                 <p class="text-md about-movie__content__box__text">Joker" (2019) é um drama psicológico que explora a
                     jornada de Arthur Fleck, um homem marginalizado e socialmente isolado que trabalha como palhaço em
                     Gotham City. O filme se passa em uma versão sombria e distópica da cidade, onde a desigualdade
-                    social e a corrupção política são predominantes. <br>
-                    <br>
-                    Arthur Fleck é retratado como alguém que luta com doenças mentais, incluindo riso patológico, o que
-                    o faz rir em momentos inapropriados e desconfortáveis. Ele vive com sua mãe idosa em um apartamento
-                    decadente e sonha em ser um comediante de stand-up, inspirado por seu ídolo, Murray Franklin, um
-                    famoso apresentador de talk show interpretado por Robert De Niro. <br>
+                    social e a corrupção política são predominantes.
                     <br>
 
-                    Conforme Arthur enfrenta o desprezo da sociedade e uma série de reveses pessoais, ele lentamente
-                    mergulha na loucura. Eventualmente, eventos traumáticos e a indiferença social o empurram para o
-                    limite, desencadeando sua transformação no icônico vilão Joker. O filme aborda temas como abuso
-                    infantil, negligência institucional, desigualdade econômica e o impacto devastador da doença mental
-                    não tratada.
+                    <a href="#" class="text-md open-modal" data-modal="modal-1">Veja mais</a>
+
+
                 </p>
+
+
 
                 <div class="about-movie__content__box__dc">
                     <img src="./dist/images/logo-dc.png" alt="">
@@ -103,25 +128,382 @@
 
 
 
+
+
+
+            <div class="container__arrow">
+                <span class="material-symbols-outlined arrow_down">
+                    keyboard_arrow_down
+                </span>
+            </div>
+
         </div>
 
-        <div class="container__arrow">
-            <span class="material-symbols-outlined arrow_down">
-                keyboard_arrow_down
-            </span>
-        </div>
+        <dialog id="modal-1" class="modal-about-movie" data-modal="modal-1">
+            <button class="close-modal" data-modal="modal-1">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+            <div class="about-movie__content__about__modal">
+                <h2 class="text-big">SOBRE O FILME</h2>
+                <p class="text-md">Joker" (2019) é um drama psicológico que explora a jornada de Arthur Fleck, um homem
+                    marginalizado e
+                    socialmente isolado que trabalha como palhaço em Gotham City. O filme se passa em uma versão sombria
+                    e distópica da cidade, onde a desigualdade social e a corrupção política são predominantes.
+                    <br>
+                    <br>
+                    Arthur Fleck é retratado como alguém que luta com doenças mentais, incluindo riso patológico, o que
+                    o faz rir em momentos inapropriados e desconfortáveis.
+                    Ele vive com sua mãe idosa em um apartamento
+                    decadente e sonha em ser um comediante de stand-up, inspirado por seu ídolo, Murray Franklin, um
+                    famoso apresentador de talk show interpretado por Robert De Niro.
+                    <br>
+                    <br>
+                    Conforme Arthur enfrenta o desprezo da sociedade e uma série de reveses pessoais, ele lentamente
+                    mergulha na loucura. Eventualmente, eventos traumáticos e a indiferença social o empurram para o
+                    limite, desencadeando sua transformação no icônico vilão Joker. O filme aborda temas como abuso
+                    infantil, negligência institucional, desigualdade econômica e o impacto devastador da doença mental
+                    não tratada.
+
+
+                </p>
+
+
+            </div>
+
+        </dialog>
+
 
 
     </section>
-    
+
+    <!--------------------------------------MOBILE========================================================-->
+
+    <section class="about-movie__mobile" id="secaomobile1">
+        <div class="about-movie__mobile__content">
+
+            <div class="about-movie__mobile__content__about" id="modal-div" data-modal="modal-div">
+                <h2 class="text-big">SOBRE O FILME</h2>
+                <p class="text-md">Joker" (2019) é um drama psicológico que explora a jornada de Arthur Fleck, um homem
+                    marginalizado e
+                    socialmente isolado que trabalha como palhaço em Gotham City. O filme se passa em uma versão sombria
+                    e distópica da cidade, onde a desigualdade social e a corrupção política são predominantes.
+                </p>
+
+
+                <a class="text-md about-movie__mobile__content__about__btn open-modal" data-modal="modal-2">Veja
+                    mais</a>
+
+
+
+
+            </div>
+
+
+
+        </div>
+        <dialog id="modal-2" class="modal-about-movie--mobile" data-modal="modal-2">
+            <button class="close-modal" data-modal="modal-2">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+            <div class="about-movie__mobile__content__about__modal">
+                <h2 class="text-big">Sobre o filme</h2>
+                <p class="text-md">Joker" (2019) é um drama psicológico que explora a jornada de Arthur Fleck, um homem
+                    marginalizado e
+                    socialmente isolado que trabalha como palhaço em Gotham City. O filme se passa em uma versão sombria
+                    e distópica da cidade, onde a desigualdade social e a corrupção política são predominantes.
+                    <br>
+                    <br>
+                    Arthur Fleck é retratado como alguém que luta com doenças mentais, incluindo riso patológico, o que
+                    o faz rir em momentos inapropriados e desconfortáveis.
+                    Ele vive com sua mãe idosa em um apartamento
+                    decadente e sonha em ser um comediante de stand-up, inspirado por seu ídolo, Murray Franklin, um
+                    famoso apresentador de talk show interpretado por Robert De Niro.
+
+
+                </p>
+
+
+            </div>
+
+        </dialog>
+
+
+    </section>
+
+
+
+
+
+
+    <!-----------------------------------------------------------JOAQUIN---------------------->
+
+    <section class="about-movie-joaquin" id="secao2">
+
+
+
+        <div class="about-movie-joaquin__content">
+            <div class="about-movie-joaquin__content__box get-div" id="modal-div" data-modal="modal-div">
+                <h2 class="text-big">JOAQUIN PHOENIX</h2>
+                <p class="text-md about-movie-joaquin__content__box__text">Joaquin Phoenix mergulhou profundamente
+                    no papel, perdendo uma quantidade significativa de peso para retratar a fragilidade física de
+                    Arthur e estudando transtornos de personalidade para trazer autenticidade à sua performance. Seu
+                    retrato do Coringa é complexo, mostrando tanto a vulnerabilidade quanto a violência do
+                    personagem, tornando-o uma figura trágica e aterrorizante ao mesmo tempo.
+                    <a href="#" class="text-md open-modal" data-modal="modal-3">Veja mais</a>
+
+
+                </p>
+
+                <div class="logo-dc__joaquin">
+                    <img src="./dist/images/logo-dc.png" alt="">
+                </div>
+
+
+            </div>
+
+            <div class="container__arrow">
+                <span class="material-symbols-outlined arrow_down">
+                    keyboard_arrow_down
+                </span>
+            </div>
+
+
+
+        </div>
+
+
+
+        <dialog id="modal-3" class="modal-about-movie" data-modal="modal-3">
+            <button class="close-modal" data-modal="modal-3">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+            <div class="about-movie__content__about__modal">
+                <h2 class="text-big">JOAQUIN PHOENIX</h2>
+                <p class="text-md">Joaquin Phoenix mergulhou profundamente
+                    no papel, perdendo uma quantidade significativa de peso para retratar a fragilidade física de
+                    Arthur e estudando transtornos de personalidade para trazer autenticidade à sua performance. Seu
+                    retrato do Coringa é complexo, mostrando tanto a vulnerabilidade quanto a violência do
+                    personagem, tornando-o uma figura trágica e aterrorizante ao mesmo tempo.
+
+                </p>
+
+
+            </div>
+
+        </dialog>
+
+
+
+    </section>
+
+
+
+    <section class="about-movie-joaquin__mobile" id="secaomobile2">
+        <div class="about-movie-joaquin__mobile__content">
+
+            <div class="about-movie-joaquin__mobile__content__about">
+                <h2 class="text-big">JOAQUIN PHOENIX</h2>
+                <p class="text-md">Joaquin Phoenix mergulhou profundamente
+                    no papel, perdendo uma quantidade significativa de peso para retratar a fragilidade física de
+                    Arthur e estudando transtornos de personalidade para trazer autenticidade à sua performance.
+                </p>
+                <a class="text-md about-movie-joaquin__mobile__content__about__btn open-modal" data-modal="modal-4">Veja
+                    mais</a>
+
+
+            </div>
+
+        </div>
+        <dialog id="modal-4" class="modal-about-movie--mobile" data-modal="modal-4">
+            <button class="close-modal" data-modal="modal-4">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+            <div class="about-movie__mobile__content__about__modal">
+                <h2 class="text-big">JOAQUIN PHOENIX</h2>
+                <br>
+                <p class="text-md">Joaquin Phoenix é um ator e produtor norte-americano nascido em 28 de outubro de 1974
+                    em San Juan, Porto Rico. Ele ganhou reconhecimento mundial por sua versatilidade e intensidade em
+                    papéis complexos e profundos. Phoenix vem de uma família de artistas; seus irmãos River e Rain
+                    Phoenix também são atores.
+                    <br>
+                    <br>
+                    Phoenix começou sua carreira como ator infantil ao lado de seu irmão River, participando de séries
+                    de TV e filmes. No entanto, foi nos anos 2000 que ele se consolidou como um dos atores mais
+                    respeitados de Hollywood. Entre seus trabalhos mais notáveis estão "Gladiador" (2000), em que foi
+                    indicado ao Oscar por seu papel como o vilão Commodus, e "Johnny & June" (2005), onde interpretou o
+                    músico Johnny Cash, ganhando o Globo de Ouro de Melhor Ator.
+                    <br>
+                    <br>
+                    O auge de sua carreira veio com o papel-título em "Coringa" (2019), pelo qual venceu o Oscar, o
+                    Globo de Ouro e o BAFTA de Melhor Ator. Sua atuação foi aclamada por capturar de maneira visceral a
+                    trajetória de um homem perturbado e marginalizado. Phoenix é também conhecido por seu ativismo em
+                    prol dos direitos dos animais e causas ambientais.
+
+
+
+                </p>
+
+
+            </div>
+
+        </dialog>
+
+    </section>
+
+
+    <!----------------------------------------------------------------ZAZIE------------------------------------------------------>
+
+
+    <section class="about-movie-zazie">
+        <div class="about-movie-zazie__content">
+            <div class="about-movie-zazie__content__box get-div" id="modal-div" data-modal="modal-div">
+                <h2 class="text-big">ZAZIE BEETZ</h2>
+                <p class="text-md about-movie-zazie__content__box__text">Zazie Beetz interpretou Sophie Dumond em Joker,
+                    uma mãe solteira que Arthur Fleck (Joaquin Phoenix) imagina ser seu interesse amoroso. A
+                    relação entre eles é, na verdade, uma fantasia criada por Arthur, destacando sua instabilidade
+                    mental.
+                    <a href="#" class="text-md open-modal" data-modal="modal-5">Veja mais</a>
+
+
+                </p>
+
+                <div class="logo-dc__zazie">
+                    <img src="./dist/images/logo-dc.png" alt="">
+                </div>
+
+
+            </div>
+
+            <div class="container__arrow">
+                <span class="material-symbols-outlined arrow_down">
+                    keyboard_arrow_down
+                </span>
+            </div>
+
+
+
+        </div>
+
+        <dialog id="modal-5" class="modal-about-movie" data-modal="modal-5">
+            <button class="close-modal" data-modal="modal-5">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+            <div class="about-movie__content__about__modal">
+                <h2 class="text-big">ZAZIE BEETZ</h2>
+                <p class="text-md">Zazie Beetz é uma atriz alemã-americana nascida em 1º de junho de 1991, em Berlim, na
+                    Alemanha. Ela cresceu em Nova York, onde desenvolveu seu interesse pela atuação desde cedo. Beetz se
+                    destacou pela primeira vez na série de comédia "Atlanta", criada por Donald Glover, onde interpreta
+                    Vanessa "Van" Keefer. Sua atuação na série, que estreou em 2016, lhe rendeu aclamação crítica e
+                    reconhecimento por sua naturalidade e talento.
+                    <br>
+                    <br>
+                    Além de "Atlanta", Beetz ganhou ainda mais destaque em Hollywood com sua participação em grandes
+                    produções como "Deadpool 2" (2018), onde interpretou a mutante Domino, trazendo uma abordagem
+                    carismática e cheia de estilo à personagem. Outro papel marcante de sua carreira foi no filme
+                    "Coringa" (2019), onde interpretou Sophie Dumond, interesse amoroso do personagem de Joaquin
+                    Phoenix.
+                    <br>
+                    <br>
+                    Beetz é conhecida por sua autenticidade, presença vibrante na tela e compromisso com a diversidade e
+                    representatividade. Ela também se destaca por adotar papéis variados, que vão desde comédia até
+                    dramas intensos. Com sua mistura de carisma e talento, Zazie Beetz se consolidou como uma das
+                    atrizes promissoras de sua geração.
+
+                </p>
+
+
+            </div>
+
+        </dialog>
+    </section>
+
+    <!--------------------------------------------------MOBILE ZAZIE--------------------------------------------------------------------->
+
+
+    <section class="about-movie-zazie__mobile">
+        <div class="about-movie-zazie__mobile__content">
+
+            <div class="about-movie-zazie__mobile__content__about">
+                <h2 class="text-big">ZAZIE BEETZ</h2>
+                <p class="text-md">Zazie Beetz interpretou Sophie Dumond em Joker,
+                    uma mãe solteira que Arthur Fleck (Joaquin Phoenix) imagina ser seu interesse amoroso. A
+                    relação entre eles é, na verdade, uma fantasia criada por Arthur, destacando sua instabilidade
+                    mental.
+                </p>
+                <a class="text-md about-movie-zazie__mobile__content__about__btn open-modal" data-modal="modal-6">Veja
+                    mais</a>
+
+
+            </div>
+
+        </div>
+        <dialog id="modal-6" class="modal-about-movie--mobile" data-modal="modal-6">
+            <button class="close-modal" data-modal="modal-6">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+            <div class="about-movie__mobile__content__about__modal">
+                <h2 class="text-big">ZAZIE BEETZ</h2>
+                <br>
+                <p class="text-md">Zazie Beetz é uma atriz alemã-americana nascida em 1º de junho de 1991, em Berlim, na
+                    Alemanha. Ela cresceu em Nova York, onde desenvolveu seu interesse pela atuação desde cedo. Beetz se
+                    destacou pela primeira vez na série de comédia "Atlanta", criada por Donald Glover, onde interpreta
+                    Vanessa "Van" Keefer. Sua atuação na série, que estreou em 2016, lhe rendeu aclamação crítica e
+                    reconhecimento por sua naturalidade e talento.
+                    <br>
+                    <br>
+                    Além de "Atlanta", Beetz ganhou ainda mais destaque em Hollywood com sua participação em grandes
+                    produções como "Deadpool 2" (2018), onde interpretou a mutante Domino, trazendo uma abordagem
+                    carismática e cheia de estilo à personagem. Outro papel marcante de sua carreira foi no filme
+                    "Coringa" (2019), onde interpretou Sophie Dumond, interesse amoroso do personagem de Joaquin
+                    Phoenix.
+                    <br>
+                    <br>
+                    Beetz é conhecida por sua autenticidade, presença vibrante na tela e compromisso com a diversidade e
+                    representatividade. Ela também se destaca por adotar papéis variados, que vão desde comédia até
+                    dramas intensos. Com sua mistura de carisma e talento, Zazie Beetz se consolidou como uma das
+                    atrizes promissoras de sua geração.
+
+
+
+                </p>
+
+
+            </div>
+
+        </dialog>
+
+    </section>
+
+
+
+    <!-------------------------------------------------ROBERT DE NIRO----------------------------------------------------------------------->
+
+
+
 
     <section class="about-movie-deniro">
         <div class="about-movie-deniro__content">
-            <div class="about-movie-deniro__content__box">
+            <div class="about-movie-deniro__content__box get-div" id="modal-div" data-modal="modal-div">
                 <h2 class="text-big">ROBERT DE NIRO</h2>
-                <p class="text-md about-movie-deniro__content__box__text">JO papel de De Niro em "Joker" é uma homenagem ao seu personagem Rupert Pupkin do filme "The King of Comedy" de 1982, onde ele também interpretou um comediante obsessivo com a fama. Em "Joker", a presença de De Niro adiciona uma camada de complexidade e referência ao tema da fama e da loucura explorado em ambos os filmes.
+                <p class="text-md about-movie-deniro__content__box__text">O papel de De Niro em "Joker" é uma homenagem
+                    ao seu personagem Rupert Pupkin do filme "The King of Comedy" de 1982, onde ele também interpretou
+                    um comediante obsessivo com a fama. Em "Joker", a presença de De Niro adiciona uma camada de
+                    complexidade e referência ao tema da fama e da loucura explorado em ambos os filmes.
+                    <a href="#" class="text-md open-modal" data-modal="modal-7">Veja mais</a>
 
-                    
+
                 </p>
 
                 <div class="logo-dc__deniro">
@@ -131,19 +513,173 @@
 
             </div>
 
+            <div class="container__arrow">
+                <span class="material-symbols-outlined arrow_down">
+                    keyboard_arrow_down
+                </span>
+            </div>
+
+
+
         </div>
 
+        <dialog id="modal-7" class="modal-about-movie" data-modal="modal-7">
+            <button class="close-modal" data-modal="modal-7">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+            <div class="about-movie__content__about__modal">
+                <h2 class="text-big">ROBERT DE NIRO</h2>
+                <br>
+                <p class="text-md">Robert De Niro, nascido em 17 de agosto de 1943, em Nova York, é amplamente
+                    reconhecido como um dos maiores atores da história do cinema. Com uma carreira que se estende por
+                    mais de cinco décadas, ele é conhecido por sua dedicação extrema aos papéis, muitas vezes passando
+                    por transformações físicas e emocionais profundas. A parceria de De Niro com o diretor Martin
+                    Scorsese resultou em alguns dos filmes mais icônicos de todos os tempos, como Taxi Driver (1976),
+                    Touro Indomável (1980) e Os Bons Companheiros (1990). Ele ganhou dois Oscars: Melhor Ator por Touro
+                    Indomável e Melhor Ator Coadjuvante por interpretar o jovem Vito Corleone em O Poderoso Chefão:
+                    Parte II (1974).
+                    <br>
+                    <br>
+                    Em Coringa (2019), De Niro interpreta Murray Franklin, um carismático apresentador de talk show que
+                    se torna um símbolo da indiferença da sociedade para com pessoas marginalizadas. Sua interação com
+                    Arthur Fleck (Joaquin Phoenix) é central para a transformação do personagem em Coringa. A escolha de
+                    De Niro para esse papel tem grande significado, já que faz referência ao clássico O Rei da Comédia
+                    (1982), onde ele interpretou um comediante fracassado obcecado por se tornar famoso. Em Coringa,
+                    essa dinâmica é invertida, com De Niro agora no papel do bem-sucedido apresentador, alvo da obsessão
+                    de Arthur. Sua atuação agrega camadas de crítica social e nostalgia ao filme, reforçando a reflexão
+                    sobre a cultura midiática e o tratamento dispensado àqueles que são excluídos.
 
-        
+                </p>
 
-        <div class="container__arrow">
-            <span class="material-symbols-outlined arrow_down">
-                keyboard_arrow_down
-            </span>
-        </div>
 
+            </div>
+
+        </dialog>
 
     </section>
+
+<!------------------------------------------------------------ROBERT DE NIRO MOBILE----------------------------------------------------------------->
+
+    <section class="about-movie-deniro__mobile">
+        <div class="about-movie-deniro__mobile__content">
+
+            <div class="about-movie-deniro__mobile__content__about">
+                <h2 class="text-big">ROBERT DE NIRO</h2>
+                <p class="text-md">O papel de De Niro em "Joker" é uma homenagem
+                    ao seu personagem Rupert Pupkin do filme "The King of Comedy" de 1982, onde ele também interpretou
+                    um comediante obsessivo com a fama. Em "Joker", a presença de De Niro adiciona uma camada de
+                    complexidade e referência ao tema da fama e da loucura explorado em ambos os filmes.
+                </p>
+                <a class="text-md about-movie-deniro__mobile__content__about__btn open-modal" data-modal="modal-8">Veja
+                    mais</a>
+
+
+            </div>
+
+        </div>
+        <dialog id="modal-8" class="modal-about-movie--mobile" data-modal="modal-8">
+            <button class="close-modal" data-modal="modal-8">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+            <div class="about-movie__mobile__content__about__modal">
+                <h2 class="text-big">ROBERT DE NIRO</h2>
+                <br>
+                <p class="text-md">Robert De Niro, nascido em 17 de agosto de 1943, em Nova York, é amplamente
+                    reconhecido como um dos maiores atores da história do cinema. Com uma carreira que se estende por
+                    mais de cinco décadas, ele é conhecido por sua dedicação extrema aos papéis, muitas vezes passando
+                    por transformações físicas e emocionais profundas. A parceria de De Niro com o diretor Martin
+                    Scorsese resultou em alguns dos filmes mais icônicos de todos os tempos, como Taxi Driver (1976),
+                    Touro Indomável (1980) e Os Bons Companheiros (1990). Ele ganhou dois Oscars: Melhor Ator por Touro
+                    Indomável e Melhor Ator Coadjuvante por interpretar o jovem Vito Corleone em O Poderoso Chefão:
+                    Parte II (1974).
+                    <br>
+                    <br>
+                    Em Coringa (2019), De Niro interpreta Murray Franklin, um carismático apresentador de talk show que
+                    se torna um símbolo da indiferença da sociedade para com pessoas marginalizadas. Sua interação com
+                    Arthur Fleck (Joaquin Phoenix) é central para a transformação do personagem em Coringa. A escolha de
+                    De Niro para esse papel tem grande significado, já que faz referência ao clássico O Rei da Comédia
+                    (1982), onde ele interpretou um comediante fracassado obcecado por se tornar famoso. Em Coringa,
+                    essa dinâmica é invertida, com De Niro agora no papel do bem-sucedido apresentador, alvo da obsessão
+                    de Arthur. Sua atuação agrega camadas de crítica social e nostalgia ao filme, reforçando a reflexão
+                    sobre a cultura midiática e o tratamento dispensado àqueles que são excluídos.
+
+
+
+                </p>
+
+
+            </div>
+
+        </dialog>
+
+    </section>
+
+<!---------------------------------------------------BILHETERIA------------------------------------------------------------------------->
+
+
+    <section class="about-movie-bilheteria" id="secao3">
+        <div class="about-movie-bilheteria__content">
+            <div class="about-movie-bilheteria__content__box">
+                <h2 class="text-big">BILHETERIA</h2>
+                <p class="text-md about-movie-bilheteria__content__box__text">"Joker" se destacou não apenas por sua
+                    receita impressionante, mas também por sua eficiência financeira. Com um orçamento de produção
+                    relatado entre $55-70 milhões, o filme alcançou uma arrecadação extraordinária de US$ 1,074 bilhão
+                    mundialmente. Nos Estados Unidos e Canadá, arrecadou US$ 335,5 milhões, enquanto nos demais
+                    territórios internacionais alcançou US$ 738,5 milhões.
+
+
+
+
+                </p>
+
+
+
+            </div>
+
+
+        </div>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; 2024 Todos os direitos reservados. Desenvolvido por Vitor Hugo.</p>
+                <p>Este site é uma homenagem ao filme "Joker" (2019). Todos os direitos autorais sobre o filme e conteúdo relacionado pertencem aos seus respectivos proprietários.</p>
+            </div>
+        </footer>
+
+    </section>
+
+    <section class="about-movie-bilheteria__mobile" id="secaomobile3">
+        <div class="about-movie-bilheteria__mobile__content">
+
+            <div class="about-movie-bilheteria__mobile__content__about">
+                <h2 class="text-big">BILHETERIA</h2>
+                <p class="text-md">"Joker" se destacou não apenas por sua
+                    receita impressionante, mas também por sua eficiência financeira. Com um orçamento de produção
+                    relatado entre $55-70 milhões, o filme alcançou uma arrecadação extraordinária de US$ 1,074 bilhão
+                    mundialmente. Nos Estados Unidos e Canadá, arrecadou US$ 335,5 milhões, enquanto nos demais
+                    territórios internacionais alcançou US$ 738,5 milhões.
+                </p>
+                
+
+
+            </div>
+
+        </div>
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; 2024 Todos os direitos reservados. Desenvolvido por Vitor Hugo.</p>
+               
+            </div>
+        </footer>
+
+        
+    </section>
+
+    
 
 
 

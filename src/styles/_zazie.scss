@@ -1,12 +1,12 @@
 @use 'variaveis';
 
-
-.about-movie-deniro__mobile {
+.about-movie-zazie__mobile {
     display: none;
 }
 
-.about-movie-deniro {
-    background-image: url(../images/robert-de-niro.png);
+
+.about-movie-zazie {
+    background-image: url(../images/joker-zazie.png);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -64,17 +64,18 @@
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-items: center;
-        padding-right: 50px;
+        padding-left: 50px;
         position: relative;
 
         &__box {
             margin-top: -50px;
-            grid-column: 2;
-            width: 100%;
+            grid-column: 1;
+            width: 90%;
             max-width: 900px;
             border: 1px solid variaveis.$corDoTextoSecundario;
             max-height: calc(100vh - 250px);
             overflow: hidden;
+            
             
 
             h2 {
@@ -93,7 +94,7 @@
 
 
         }
-        .logo-dc__deniro {
+        .logo-dc__zazie {
             position: absolute;
             left: 0;
             bottom: 45px;
@@ -115,14 +116,14 @@
 }
 
 @media (max-width: 1040px) {
-    .about-movie-deniro{
+    .about-movie-zazie{
             display: none;
         
     }
 
 
-    .about-movie-deniro__mobile {
-        background-image: url(../images/robertdeniro-mobile.png);
+    .about-movie-zazie__mobile {
+        background-image: url(../images/zazie-mobile.png);
         height: 100vh;
         width: 100%;
         background-size: cover;
@@ -151,10 +152,6 @@
 
                 span {
                     font-size: 38px;
-                    
-                    width: 100%;
-                    display: flex;
-                    
                 }
             }
 
